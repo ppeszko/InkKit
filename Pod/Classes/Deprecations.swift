@@ -80,7 +80,7 @@ extension String {
 extension Image {
   
   @available(*, unavailable, renamed: "circle(radius:attributes:)")
-  public static func circle(_ radius: CGFloat, attributes attributesBlock: AttributesBlock) -> Image {
+  public static func circle(_ radius: CGFloat, attributes attributesBlock: @escaping AttributesBlock) -> Image {
     return circle(radius: radius, attributes: attributesBlock)
   }
   
